@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/relative_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:text="jan"/>
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_below="@+id/month"
+        android:layout_alignParentLeft="true"
+        android:text="2016"/>
+
+    <ListView
+        android:id="@+id/day_view_list"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="40.0sp"
+        android:layout_below="@+id/year"></ListView>
+
+
+</RelativeLayout>
